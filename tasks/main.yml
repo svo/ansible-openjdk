@@ -1,0 +1,13 @@
+    - name: Add java 8 ppa
+      apt_repository: repo="ppa:openjdk-r/ppa" update_cache=yes
+      tags:
+      - openjdk
+      - run
+      become: yes
+
+    - name: Install java
+      apt: pkg=openjdk-8-jre
+      tags:
+      - openjdk
+      - run
+      become: yes
