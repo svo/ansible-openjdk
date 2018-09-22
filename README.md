@@ -1,2 +1,2 @@
-environment-openjdk
-===================
+Ansible OpenJDK
+===============
